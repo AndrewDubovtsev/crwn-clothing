@@ -31,7 +31,12 @@
     width: 80%;
     opacity: .7;
     display: none;
-
+    @media (max-width: 800px) {
+      display: block;
+      opacity: .9;
+      min-width: unset;
+      padding: 0 10px;
+    }
   }
 
   .collection-footer {
@@ -48,6 +53,20 @@
 
     .price {
       width: 10%;
+    }
+  }
+
+  @media (max-width: 800px) {
+    width: 40vw;
+    &:hover {
+      .image {
+        opacity: 1;
+      }
+
+      .custom-button {
+        display: flex;
+        opacity: 1;
+      }
     }
   }
 }

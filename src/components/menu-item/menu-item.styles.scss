@@ -66,4 +66,11 @@
       text-transform: uppercase;
     }
   }
+
+  @media (max-width: 800px) {
+    height: 200px;
+    &.large {
+      height: 200px;
+    }
+  }
 }
